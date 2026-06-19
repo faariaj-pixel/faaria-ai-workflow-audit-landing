@@ -2,6 +2,12 @@
 
 A conversion-focused static landing page for Faaria Jessani's primary offer: the AI Workflow & Automation Audit for service-based businesses and operations teams.
 
+## Live deployment
+
+- Live Vercel URL: https://faaria-ai-workflow-audit-landing.vercel.app/
+- GitHub repository: https://github.com/faariaj-pixel/faaria-ai-workflow-audit-landing
+- Vercel project: faaria-ai-workflow-audit-landing
+
 ## Strategy summary
 
 - Page goal: Convert visitors into discovery calls for an AI Workflow & Automation Audit.
@@ -52,30 +58,34 @@ Do not invent these. Add only when real:
 - Real AI Workflow Readiness Checklist download link.
 - Professional headshot or branded image.
 
-## Manual GitHub deployment
+## GitHub repository
 
-GitHub CLI is not currently installed in this WSL environment, so use these manual steps after creating a GitHub repository:
+The repository was created through Composio/GitHub:
+
+```text
+https://github.com/faariaj-pixel/faaria-ai-workflow-audit-landing
+```
+
+To connect this local folder to the remote manually if needed:
 
 ```bash
-git init
-git add .
-git commit -m "Add AI workflow audit landing page"
-git branch -M main
-git remote add origin <your-github-repo-url>
+git remote add origin https://github.com/faariaj-pixel/faaria-ai-workflow-audit-landing.git
 git push -u origin main
 ```
 
-## Manual Vercel deployment
+## Vercel deployment
 
-Vercel CLI is not currently installed in this WSL environment. To deploy manually:
+The production deployment was created through Composio/Vercel:
 
-1. Push this folder to GitHub.
-2. Go to https://vercel.com/new.
-3. Import the GitHub repository.
-4. Framework preset: Other.
-5. Build command: leave blank.
-6. Output directory: leave blank or use `.`.
-7. Deploy.
+```text
+https://faaria-ai-workflow-audit-landing.vercel.app/
+```
+
+Static-site settings:
+
+- Framework: Other / no framework
+- Build command: blank
+- Output directory: blank / project root
 
 ## QA checklist
 
