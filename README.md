@@ -21,6 +21,8 @@ A conversion-focused static landing page for Faaria Jessani's primary offer: the
 
 - `index.html` — semantic landing page markup with SEO and Open Graph tags.
 - `styles.css` — responsive premium design system.
+- `checklist.html` — printable AI Workflow Readiness Checklist lead magnet.
+- `og-image.svg` — branded Open Graph/social sharing image.
 - `README.md` — setup, deployment, and QA notes.
 
 ## Local preview
@@ -37,15 +39,23 @@ Then open:
 http://localhost:4173
 ```
 
-## Required replacements before publishing
+## Review notes and pending tasks
 
-The page intentionally uses placeholder CTA links. Replace both `mailto:faaria@example.com` links in `index.html` with one of these:
+A separate review file is included so you can come back later without searching through the chat:
 
-1. Your booking link, such as Calendly, TidyCal, SavvyCal, or HubSpot Meetings.
-2. Your real business email address.
-3. A form/lead-capture URL for the AI Workflow Readiness Checklist.
+```text
+NEXT_STEPS_AND_REVIEW_NOTES.md
+```
 
-Also replace `og-image-placeholder.png` with a real Open Graph image if available.
+Open it for the pending task list, recommended version 2 improvements, and prompts you can paste back into Leo when you are ready to make changes.
+
+## Required replacements before publishing widely
+
+The primary discovery CTA now opens a pre-filled email to `faariajess@gmail.com`. Replace it with a booking link later if you prefer Calendly, TidyCal, SavvyCal, or HubSpot Meetings.
+
+The checklist CTA now links to `checklist.html`, a printable 25-question AI Workflow Readiness Checklist. If you later create an email opt-in form or hosted download, replace the checklist links with that URL.
+
+The Open Graph image now uses `og-image.svg`. Replace it with a polished PNG/JPG brand asset later if desired.
 
 ## Proof/assets to add later
 
@@ -55,7 +65,7 @@ Do not invent these. Add only when real:
 - Before/after workflow screenshots.
 - Measurable automation results such as hours saved or faster turnaround.
 - Pilot audit case study.
-- Real AI Workflow Readiness Checklist download link.
+- Email opt-in or CRM-connected AI Workflow Readiness Checklist form.
 - Professional headshot or branded image.
 
 ## GitHub repository
@@ -92,9 +102,9 @@ Static-site settings:
 - Hero names the audience and outcome clearly.
 - One primary offer: AI Workflow & Automation Audit.
 - One primary CTA: discovery call.
-- Placeholder links are clearly marked.
+- Discovery CTA uses `mailto:faariajess@gmail.com`; checklist CTA links to `checklist.html`.
 - No fake testimonials, fake logos, fake numbers, or fake guarantees.
 - Mobile responsive CSS included.
 - Accessible semantic HTML and skip link included.
-- Anchors: `#method`, `#offer`, `#proof`, `#faq`, `#contact`, `#readiness-checklist`.
+- Anchors: `#method`, `#offer`, `#proof`, `#faq`, `#contact`, `#readiness-checklist`; checklist page links back to the main page.
 - Static-site ready for Vercel.
